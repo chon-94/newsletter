@@ -7,7 +7,7 @@ class NewsletterUser(models.Model):
     def __str__(self):
         return self.email
 
-class newsletter(models.Model):
+class Newsletter(models.Model):
     name    = models.CharField(max_length=250)
     subject = models.CharField(max_length=250)
     body    = models.TextField(blank=True,null=True)
