@@ -1,7 +1,7 @@
 from django import forms
 from .models import Newsletter, NewsletterUser
 
-class NewsletterUserSignUpForm(forms,ModelForm):
+class NewsletterUserSignUpForm(forms.ModelForm):
     class meta:
         model  = NewsletterUser
         fields = ['email']
