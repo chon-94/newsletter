@@ -29,7 +29,7 @@ def newsletter_signup(request):
             html_message=render_to_string(html_template)
             message=EmailMessage(subject,html_message, from_email, to_email)
             message.content_subtype='html'
-#            message.send()
+            message.send()
 
     context={
         'form':form,

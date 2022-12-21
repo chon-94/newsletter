@@ -15,6 +15,8 @@ ALLOWED_HOSTS  = ['*']
 
 EMAIL_HOST_USER='davidarango9694@gmail.com'
 
+EMAIL_BACKEND='django.core.mail.backends.console.EmailBackend'
+
 INSTALLED_APPS = [
     'django.contrib.admin',
     'django.contrib.auth',
