@@ -13,6 +13,8 @@ DEBUG = os.environ.get('DEBUG')
 
 ALLOWED_HOSTS  = ['*']
 
+EMAIL_HOST_USER='davidarango9694@gmail.com'
+
 INSTALLED_APPS = [
     'django.contrib.admin',
     'django.contrib.auth',
@@ -29,8 +31,6 @@ INSTALLED_APPS = [
 
 TAILWIND_APP_NAME = 'theme'
 INTERNAL_IPS = ["127.0.0.1",]
-
-EMAIL_HOST_USER='davidarango9694@gmail.com'
 
 NPM_BIN = "/usr/bin/npm"
 
