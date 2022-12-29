@@ -17,6 +17,14 @@ EMAIL_HOST_USER='davidarango9694@gmail.com'
 
 EMAIL_BACKEND='django.core.mail.backends.console.EmailBackend'
 
+AUTHENTICATION_BACKENDS = [
+    'django.contrib.auth.backends.ModelBackend',
+    'allauth.account.auth_backends.AuthenticationBackend',
+]
+
+
+SITE_ID = 1
+
 INSTALLED_APPS = [
     'django.contrib.admin',
     'django.contrib.auth',
@@ -28,6 +36,9 @@ INSTALLED_APPS = [
     'tailwind',
     'theme',
     'newsletter',
+    'django.contrib.sites',
+    'allauth','allauth.account',
+    'allauth.socialaccount',
     
 ]
 
@@ -103,3 +114,5 @@ MEDIA_URL   = '/media/'
 MEDIA_ROOT  = os.path.join(BASE_DIR, 'media_static')
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+AUTH_USER_MODEL = 'newsletter.User'
