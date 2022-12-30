@@ -39,7 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.sites',
     'allauth','allauth.account',
     'allauth.socialaccount',
-    
+    'dashboard',
 ]
 
 TAILWIND_APP_NAME = 'theme'
