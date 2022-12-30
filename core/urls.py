@@ -8,7 +8,9 @@ from .views import HomeView
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('newsletter/', include('newsletter.urls', namespace='newsletter'))
+    path('newsletter/', include('newsletter.urls', namespace='newsletter')),
+    path('dashboard/', include('dashboard.urls', namespace='dashboard')),
+    
     
     ]
 

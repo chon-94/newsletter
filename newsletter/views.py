@@ -34,7 +34,7 @@ def newsletter_signup(request):
     context={
         'form':form,
     }
-    return render(request, 'start-here.html', context)
+    return render(request, 'newsletter/start-here.html', context)
 
 def newsletter_unsubscribe(request):
     form =NewsletterUserSignUpForm(request.POST or None)
@@ -52,4 +52,4 @@ def newsletter_unsubscribe(request):
         "form": form,
     }
 
-    return render(request, 'unsubscribe.html', context) 
+    return render(request, 'newsletter/unsubscribe.html', context) 
